@@ -19,7 +19,7 @@ const LeftLayout = ({loading, sendToBackend}) => {
         
         if (file) reader.readAsDataURL(file);
       };
-      
+
   return (
     <div className='left-layout'>
     <div className='layout-titles'>
@@ -32,9 +32,9 @@ const LeftLayout = ({loading, sendToBackend}) => {
             <div className='input-header'>Input</div>
             <div className='input-body'>
                 {img &&
-                <img src={img} />}
+                <img src={img} alt="doc-image"/>}
                   {!img  &&
-                <img src={document} />}
+                <img src={document} alt="default-image"/>}
                 
             </div>
             <div className='input-footer'>
