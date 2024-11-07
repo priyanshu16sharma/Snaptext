@@ -114,7 +114,9 @@ app.use(cors());
 
 
           const extractedData = {};
+          console.log(text1);
           text1.forEach((line, index) => {
+            console.log(line, index)
             if (/Passport No/i.test(line)) {
               extractedData.passport_number = cleanField(text1[index + 1].match(/\d+/)[0]);
             }
